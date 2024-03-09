@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 234436051}
   - component: {fileID: 234436052}
   m_Layer: 0
-  m_Name: Legs
+  m_Name: right leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234436050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6400001, y: -1.29, z: 0}
+  m_LocalPosition: {x: 0.68, y: -1.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 525528544}
   - component: {fileID: 525528545}
   m_Layer: 0
-  m_Name: Legs (1)
+  m_Name: left leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,7 +486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525528543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16, y: -1.25, z: 0}
+  m_LocalPosition: {x: -0.24, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
