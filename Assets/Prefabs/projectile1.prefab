@@ -98,5 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  lifeTime: 5
-  distance: 0
+  lifeTime: 1
+  burst: {fileID: 2020350675433107490, guid: 751db96f0e5a53a419d5dc171105acda, type: 3}
