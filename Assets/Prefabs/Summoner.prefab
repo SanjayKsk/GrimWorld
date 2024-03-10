@@ -128,6 +128,8 @@ MonoBehaviour:
   - {fileID: 6669694053466196167, guid: 65e9930791ea9f448a0734b14c3864b4, type: 3}
   - {fileID: 8024092644201066673, guid: 4bac61a08cc451f41a3c8048011e3d06, type: 3}
   damage: 1
+  healthDropChance: 20
+  healthDrop: {fileID: 3859712587714826675, guid: 8c2fd6919139ed843923487a2e77ba25, type: 3}
   minX: -100.8
   maxX: 129.1
   minY: -54
