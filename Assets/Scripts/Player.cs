@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
    public float health;
 
    public Image[] hearts;
+   public Animator hurtScreen;
    public Sprite fullHeart;
    public Sprite emptyHeart;
    private Rigidbody2D rb;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
    {
       anim = GetComponent<Animator>();
       rb = GetComponent<Rigidbody2D>();
+      hurtScreen = GameObject.FindGameObjectWithTag("HurtScreen").GetComponent<Animator>();
    }
 
    private void Update()
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
    {
       health -= damage;
       UpdateUI((int)health);
+      hurtScreen.SetTrigger("hurt");
       if (health <= 0)
       {
          Destroy(gameObject);

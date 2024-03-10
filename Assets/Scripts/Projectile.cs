@@ -32,5 +32,11 @@ public class Projectile : MonoBehaviour
             other.GetComponent<EnemyControl>().TakeDamage(damage);
             DestroyProjectile();
         }
+
+        if (other.CompareTag("Boss"))
+        {
+            other.GetComponent<Boss>().TakeDamage(damage);
+            DestroyProjectile();
+        }
     }
 }

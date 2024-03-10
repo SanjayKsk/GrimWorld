@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1051279146303314171, guid: afb3ae99306961b478b4c0dbc3cb2787, type: 3}
   shotPoint: {fileID: 1263122035809218874}
-  timeBetweenShots: 1.5
+  timeBetweenShots: 1.2
 --- !u!1 &5387747285129656897
 GameObject:
   m_ObjectHideFlags: 0

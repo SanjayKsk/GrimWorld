@@ -16,6 +16,8 @@ public class EnemyControl : MonoBehaviour
     public int healthDropChance;
     public GameObject healthDrop;
 
+    public GameObject deathEffect;
+
     public virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -37,6 +39,7 @@ public class EnemyControl : MonoBehaviour
             {
                 Instantiate(healthDrop, transform.position, Quaternion.identity);
             }
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
