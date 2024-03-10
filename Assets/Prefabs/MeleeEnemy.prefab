@@ -625,10 +625,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966c922dfe67e3041a5378d34a7b5013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 5
   player: {fileID: 0}
-  speed: 15
+  speed: 25
   timeBetweenAttacks: 3
+  dropChance: 10
+  droppables:
+  - {fileID: 2512040950503759418, guid: 7f821a6137acf514e94b2b1af1cf879a, type: 3}
+  - {fileID: 8024092644201066673, guid: 4bac61a08cc451f41a3c8048011e3d06, type: 3}
+  - {fileID: 6669694053466196167, guid: 65e9930791ea9f448a0734b14c3864b4, type: 3}
   damage: 1
   stoppingDist: 10
   attackSpeed: 8

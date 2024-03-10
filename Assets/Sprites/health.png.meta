@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 065248a8621578d49be205b592709e54
+guid: 814b6bd907f3fb140a087761852f50a5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,34 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ranger_0
+      name: health_0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 665
-        width: 282
-        height: 240
-      alignment: 9
-      pivot: {x: 0.9422151, y: 0.33123982}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23c9bf99bb2baac43b6ca4b06fdbc68e
-      internalID: 857430272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ranger_1
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 138
-        width: 457
-        height: 459
+        x: 129
+        y: 473
+        width: 382
+        height: 334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e88ac7a46d918498f93339a9bf9da5
-      internalID: -1130183480
+      spriteID: 1790a813cf6bdcf4582f925e806bb50f
+      internalID: 2004993824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger_2
+      name: health_1
       rect:
         serializedVersion: 2
-        x: 604
-        y: 100
-        width: 518
-        height: 413
+        x: 139
+        y: 66
+        width: 392
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2706a395251f0146811e5821c9a4374
-      internalID: -294252552
+      spriteID: 403ad910b50128a499b727a3045cae2b
+      internalID: 991257394
       vertices: []
       indices: 
       edges: []
@@ -190,9 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ranger_0: 857430272
-      Ranger_1: -1130183480
-      Ranger_2: -294252552
+      health_0: 2004993824
+      health_1: 991257394
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

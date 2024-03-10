@@ -118,10 +118,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5ab9380b9b4664d959839492e68c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 6
   player: {fileID: 0}
-  speed: 20
+  speed: 25
   timeBetweenAttacks: 2
+  dropChance: 20
+  droppables:
+  - {fileID: 2512040950503759418, guid: 7f821a6137acf514e94b2b1af1cf879a, type: 3}
+  - {fileID: 6669694053466196167, guid: 65e9930791ea9f448a0734b14c3864b4, type: 3}
+  - {fileID: 8024092644201066673, guid: 4bac61a08cc451f41a3c8048011e3d06, type: 3}
   damage: 1
   minX: -100.8
   maxX: 129.1

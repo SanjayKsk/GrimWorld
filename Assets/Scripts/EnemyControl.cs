@@ -10,6 +10,8 @@ public class EnemyControl : MonoBehaviour
     public float speed; 
     public float timeBetweenAttacks;
 
+    public int dropChance;
+    public GameObject[] droppables;
     public int damage;
 
     public virtual void Start()
@@ -21,6 +23,12 @@ public class EnemyControl : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            int randomChance = Random.Range(0, 101);
+            if (randomChance < dropChance)
+            {
+                GameObject drop = droppables[Random.Range(0, droppables.Length)];
+                Instantiate(drop, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }
