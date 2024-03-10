@@ -14,6 +14,9 @@ public class Summoner : EnemyControl
     private Vector2 targetPosition;
     private Animator anim;
 
+    /*override the Start method from the EnemyControl class to set the target position to a random position within the specified range, we do this to make the 
+    summoner choose a random spot to summon from.
+    */
     public override void Start()
     {
         base.Start();
@@ -26,8 +29,10 @@ public class Summoner : EnemyControl
 
     private void Update()
     {
+        // Check if player is not null to avoid moving the summoner when the player is dead
         if (player != null)
         {
+            // Check if the summoner is close to its chosen target position on the map
             if (Vector2.Distance(transform.position, targetPosition) > 0.5f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
@@ -37,6 +42,8 @@ public class Summoner : EnemyControl
             {
                 anim.SetBool("isRunning", false);
                 
+                /* Time.time is used to check the current time in seconds, if the current time is greater than or equal to the summonTime, 
+                set the summonTime to the current time plus the timeBetweenSummons, and then trigger the summon animation. */
                 if (Time.time >= summonTime)
                 {
                     summonTime = Time.time + timeBetweenSummons;
