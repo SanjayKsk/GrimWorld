@@ -122,12 +122,15 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 25
   timeBetweenAttacks: 2
-  dropChance: 20
+  dropChance: 25
   droppables:
   - {fileID: 2512040950503759418, guid: 7f821a6137acf514e94b2b1af1cf879a, type: 3}
   - {fileID: 6669694053466196167, guid: 65e9930791ea9f448a0734b14c3864b4, type: 3}
   - {fileID: 8024092644201066673, guid: 4bac61a08cc451f41a3c8048011e3d06, type: 3}
   damage: 1
+  healthDropChance: 24
+  healthDrop: {fileID: 3859712587714826675, guid: 8c2fd6919139ed843923487a2e77ba25, type: 3}
+  deathEffect: {fileID: 7605865705449771238, guid: 9644b9e0edd1a8648ab9d480eb79cb39, type: 3}
   minX: -100.8
   maxX: 129.1
   minY: -54

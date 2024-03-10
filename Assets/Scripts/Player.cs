@@ -8,16 +8,20 @@ public class Player : MonoBehaviour
    public float health;
 
    public Image[] hearts;
+   public Animator hurtScreen;
    public Sprite fullHeart;
    public Sprite emptyHeart;
    private Rigidbody2D rb;
    private Animator anim;
    private Vector2 moveVelocity;
+   private SceneTransition sceneTransition;
 
    private void Start()
    {
       anim = GetComponent<Animator>();
       rb = GetComponent<Rigidbody2D>();
+      hurtScreen = GameObject.FindGameObjectWithTag("HurtScreen").GetComponent<Animator>();
+      sceneTransition = FindObjectOfType<SceneTransition>();
    }
 
    private void Update()
@@ -44,9 +48,11 @@ public class Player : MonoBehaviour
    {
       health -= damage;
       UpdateUI((int)health);
+      hurtScreen.SetTrigger("hurt");
       if (health <= 0)
       {
          Destroy(gameObject);
+         sceneTransition.LoadScene("Lose");
       }
    }
 
@@ -69,6 +75,20 @@ public class Player : MonoBehaviour
             hearts[i].sprite = emptyHeart;
          }
       }
+   }
+
+   public void Heal(int healAmount)
+   {
+      
+      if (health + healAmount> 5)
+      {
+         health = 5;
+      }
+      else
+      {
+         health += healAmount;
+      }
+      UpdateUI((int)health);
    }
 
 

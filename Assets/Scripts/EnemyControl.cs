@@ -13,6 +13,10 @@ public class EnemyControl : MonoBehaviour
     public int dropChance;
     public GameObject[] droppables;
     public int damage;
+    public int healthDropChance;
+    public GameObject healthDrop;
+
+    public GameObject deathEffect;
 
     public virtual void Start()
     {
@@ -29,6 +33,13 @@ public class EnemyControl : MonoBehaviour
                 GameObject drop = droppables[Random.Range(0, droppables.Length)];
                 Instantiate(drop, transform.position, Quaternion.identity);
             }
+
+            int randomHealthChance = Random.Range(0, 101);
+            if (randomHealthChance < healthDropChance)
+            {
+                Instantiate(healthDrop, transform.position, Quaternion.identity);
+            }
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

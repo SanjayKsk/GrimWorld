@@ -204,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   player: {fileID: 0}
-  speed: 35
+  speed: 30
   timeBetweenAttacks: 1
   dropChance: 1
   droppables:
@@ -212,6 +212,9 @@ MonoBehaviour:
   - {fileID: 6669694053466196167, guid: 65e9930791ea9f448a0734b14c3864b4, type: 3}
   - {fileID: 8024092644201066673, guid: 4bac61a08cc451f41a3c8048011e3d06, type: 3}
   damage: 1
+  healthDropChance: 5
+  healthDrop: {fileID: 3859712587714826675, guid: 8c2fd6919139ed843923487a2e77ba25, type: 3}
+  deathEffect: {fileID: 7605865705449771238, guid: 9644b9e0edd1a8648ab9d480eb79cb39, type: 3}
   stoppingDist: 7
   attackSpeed: 3
 --- !u!1 &4148581736475351334

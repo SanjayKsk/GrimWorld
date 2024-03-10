@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Weapon
+  - Waypoints
+  - Boss
+  - HurtScreen
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - Player
   - Enemy
   - Bounds
-  - 
+  - Boss
   - 
   - 
   - 
