@@ -14,12 +14,14 @@ public class Player : MonoBehaviour
    private Rigidbody2D rb;
    private Animator anim;
    private Vector2 moveVelocity;
+   private SceneTransition sceneTransition;
 
    private void Start()
    {
       anim = GetComponent<Animator>();
       rb = GetComponent<Rigidbody2D>();
       hurtScreen = GameObject.FindGameObjectWithTag("HurtScreen").GetComponent<Animator>();
+      sceneTransition = FindObjectOfType<SceneTransition>();
    }
 
    private void Update()
@@ -50,6 +52,7 @@ public class Player : MonoBehaviour
       if (health <= 0)
       {
          Destroy(gameObject);
+         sceneTransition.LoadScene("Lose");
       }
    }
 
